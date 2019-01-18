@@ -28,6 +28,8 @@ Plugin 'tpope/vim-surround'
 " cs {[
 Plugin 'Valloric/MatchTagAlways'
 
+Plugin 'chrisbra/Colorizer'
+
 let g:ctrlp_working_path_mode = 'ra'
 
 
