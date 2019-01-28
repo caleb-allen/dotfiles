@@ -19,6 +19,7 @@ Plugin 'pangloss/vim-javascript'
 " Plugin 'kien/ctrlp.vim'
 " fuzzy finder
 
+Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-commentary'
 " comment things out
 " gc

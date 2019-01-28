@@ -235,3 +235,5 @@ exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "sleep 2s && kalu"
 
 exec --no-startup-id rescuetime
+exec --no-startup-id blueman-manager
+exec --no-startup-id /home/caleb/dotfiles/.screenlayout/desktop-displays
