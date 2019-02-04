@@ -31,6 +31,8 @@ Plugin 'Valloric/MatchTagAlways'
 
 Plugin 'chrisbra/Colorizer'
 
+" Plugin 'neovimhaskell/haskell-vim'
+
 let g:ctrlp_working_path_mode = 'ra'
 
 
