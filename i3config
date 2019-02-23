@@ -218,14 +218,14 @@ bindsym $mod+F8 exec mocp --next
 
 # App shortcuts
 bindsym $mod+w exec "/usr/bin/chromium"
-bindsym $mod+n exec "/usr/bin/thunar"
 
 # Redirect sound to headphones
-bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
+# bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
 
 # --release executes command after key release
 # bindsym --release $mod+s exec "/usr/bin/gnome-screenshot --area --clipboard --border-effect='shadow'"
 bindsym --release $mod+s exec "/usr/bin/escrotum -C -s"
+bindsym --release $mod+Control+s exec "/usr/bin/escrotum -s"
 
 # Autostart apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
