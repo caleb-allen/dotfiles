@@ -92,6 +92,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
+bindsym $mod+grave workspace 0-plan
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -100,10 +101,11 @@ bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
+bindsym $mod+9 workspace 9-comms
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
+bindsym $mod+Shift+grave move container to workspace 0-plan
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
@@ -112,8 +114,32 @@ bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+9 move container to workspace 9-comms
 bindsym $mod+Shift+0 move container to workspace 10
+
+# move current workspace to the next output
+bindsym $mod+Mod1+l move workspace to output right
+bindsym $mod+Mod1+h move workspace to output left
+bindsym $mod+Mod1+k move workspace to output up
+bindsym $mod+Mod1+j move workspace to output down
+
+# gaps pixels
+# Gaps will only work correctly if you disable window titlebars entirely.
+# Unfortunately this is necessary due to the way i3 creates such bars on windows.
+for_window [class="^.*"] border pixel 0
+gaps inner 16
+workspace 1 gaps horizontal 400
+workspace 1 gaps vertical 200
+# gaps outer 16
+
+# enable gaps when there is only one container
+# smart_gaps inverse_outer
+# bindsym $mod+plus gaps inner current plus 5
+bindsym $mod+Shift+plus gaps horizontal current set 400; gaps vertical current set 200
+bindsym $mod+plus gaps outer current set 30
+# bindsym $mod+minus gaps inner current minus 5
+
+# assign [
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
