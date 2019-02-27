@@ -143,6 +143,8 @@ bindsym $mod+plus gaps outer current set 0
 bindsym $mod+Shift+minus gaps inner current set 16
 bindsym $mod+minus gaps inner current set 0
 
+# bindsym $mod+
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
@@ -173,6 +175,12 @@ mode "resize" {
     bindsym Down resize grow height 5 px or 5 ppt
     bindsym Up resize shrink height 5 px or 5 ppt
     bindsym Right resize grow width 5 px or 5 ppt
+
+    # gaps
+    bindsym $mod+l gaps horizontal current minus 10
+    bindsym $mod+h gaps horizontal current plus 10 
+    bindsym $mod+k gaps vertical current minus 10 
+    bindsym $mod+j gaps vertical current plus 10 
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
