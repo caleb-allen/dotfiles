@@ -35,8 +35,14 @@ Plugin 'lepture/vim-jinja'
 
 " Plugin 'neovimhaskell/haskell-vim'
 
-let g:ctrlp_working_path_mode = 'ra'
+Plugin 'Valloric/YouCompleteMe'
+" Plugin 'hdima/python-syntax'
 
+Plugin 'vim-airline/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_max_files = 0
 
 call vundle#end()
 filetype plugin indent on
