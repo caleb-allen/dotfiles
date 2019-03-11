@@ -10,6 +10,11 @@ set nrformats-=octal
 set relativenumber
 set number
 
+set term=screen-256color
+set background=dark
+
+au BufRead,BufNewFile *.fish setfiletype conf
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
