@@ -138,12 +138,10 @@ workspace 1 gaps vertical 200
 # enable gaps when there is only one container
 # smart_gaps inverse_outer
 # bindsym $mod+plus gaps inner current plus 5
-bindsym $mod+Shift+plus gaps horizontal current set 400; gaps vertical current set 200
-bindsym $mod+plus gaps outer current set 0
-bindsym $mod+Shift+minus gaps inner current set 16
-bindsym $mod+minus gaps inner current set 0
-
-# bindsym $mod+
+bindsym $mod+plus gaps horizontal current set 400; gaps vertical current set 200
+bindsym $mod+Shift+plus gaps inner current set 16
+bindsym $mod+minus gaps outer current set 0
+bindsym $mod+Shift+minus gaps inner current set 0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -155,7 +153,8 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+z exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # lock
-bindsym $mod+Shift+x exec i3lock --color 475263
+bindsym $mod+x exec "i3lock --color 475263"
+bindsym $mod+Shift+x exec "i3lock --color 475263 && systemctl suspend"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -262,7 +261,8 @@ bindsym $mod+n exec "/usr/bin/chromium"
 # --release executes command after key release
 # bindsym --release $mod+s exec "/usr/bin/gnome-screenshot --area --clipboard --border-effect='shadow'"
 bindsym --release $mod+s exec "/usr/bin/escrotum -C -s"
-bindsym --release $mod+Control+s exec "/usr/bin/escrotum -s"
+# bindsym --release $mod+Control+s exec "/usr/bin/escrotum -s"
+# bindsym $mod+Mod1+v exec "/usr/bin/vim-anywhere vim i3-sensible-terminal"
 
 # Autostart apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

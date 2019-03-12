@@ -1,4 +1,4 @@
-set clipboard+=unnamed
+set clipboard=unnamedplus
 
 set ignorecase
 set smartcase
@@ -21,6 +21,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'udalov/kotlin-vim'
 Plugin 'pangloss/vim-javascript'
+
+Plugin 'posva/vim-vue'
+" let g:vue_disable_pre_processors = 1
+
 Plugin 'kien/ctrlp.vim'
 " fuzzy finder
 
@@ -44,7 +48,9 @@ Plugin 'Valloric/YouCompleteMe'
 " Plugin 'hdima/python-syntax'
 
 Plugin 'vim-airline/vim-airline'
+" Gutter status bar
 Plugin 'airblade/vim-gitgutter'
+" Git gutter status
 
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_max_files = 0
@@ -56,7 +62,6 @@ set shiftwidth=2
 set expandtab
 filetype plugin on
 syntax on
-" autocmd BufRead, BufNewFile *.fish set filetype=config
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
