@@ -138,10 +138,10 @@ workspace 1 gaps vertical 200
 # enable gaps when there is only one container
 # smart_gaps inverse_outer
 # bindsym $mod+plus gaps inner current plus 5
-bindsym $mod+plus gaps horizontal current set 400; gaps vertical current set 200
-bindsym $mod+Shift+plus gaps inner current set 16
-bindsym $mod+minus gaps outer current set 0
-bindsym $mod+Shift+minus gaps inner current set 0
+bindsym $mod+minus gaps horizontal current set 400; gaps vertical current set 200
+bindsym $mod+Shift+minus gaps inner current set 16
+bindsym $mod+plus gaps outer current set 0
+bindsym $mod+Shift+plus gaps inner current set 0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
