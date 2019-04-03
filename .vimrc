@@ -52,6 +52,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 " Git gutter status
 
+Plugin 'fatih/vim-go'
+
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_max_files = 0
 
