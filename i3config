@@ -253,7 +253,8 @@ bindsym $mod+F7 exec mocp --previous
 bindsym $mod+F8 exec mocp --next
 
 # App shortcuts
-bindsym $mod+w exec "/usr/bin/chromium"
+# bindsym $mod+w exec "/usr/bin/chromium"
+bindsym $mod+w exec "/usr/bin/firefox"
 # remove because I'm mixing up ctrl and $mod now
 # bindsym $mod+n exec "/usr/bin/chromium"
 
@@ -276,3 +277,4 @@ exec --no-startup-id "sleep 2s && kalu"
 exec --no-startup-id rescuetime
 exec --no-startup-id blueman-manager
 exec --no-startup-id /home/caleb/dotfiles/.screenlayout/desktop-displays
+exec --no-startup-id /usr/bin/numlockx

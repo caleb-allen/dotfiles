@@ -18,6 +18,7 @@ general {
 
 order += "volume master"
 order += "disk /"
+order += "disk /mnt/pidrive"
 #order += "disk /data"
 #order += "disk /home"
 #order += "run_watch DHCP"
@@ -29,7 +30,7 @@ order += "disk /"
 order += "cpu_temperature 0"
 order += "cpu_usage 0"
 order += "load"
-order += "tztime local"
+# order += "tztime local"
 
 #wireless wlp4s0 {
 #    format_up = "%quality  %essid %ip"
@@ -71,7 +72,7 @@ tztime local {
 }
 
 load {
-    format = " %1min"
+    format = " %1min "
 }
 
 cpu_usage {
@@ -83,11 +84,20 @@ cpu_temperature 0 {
 }
 
 disk "/" {
-    format = " %avail"
+    # format = " %avail"
+    format = " %used/%total"
     prefix_type	= custom
     low_threshold = 20
     threshold_type = percentage_avail
 }
+
+disk "/mnt/pidrive" {
+    format = " %used/%total"
+    prefix_type	= custom
+    low_threshold = 20
+    threshold_type = percentage_avail
+}
+
 
 #disk "/data" {
 #    format = " %avail"
